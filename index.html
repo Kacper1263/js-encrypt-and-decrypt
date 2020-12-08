@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="./skrypt.js"></script>
+    <title>AES - encrypt and decrypt</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js" integrity="sha256-/H4YS+7aYb9kJ5OKhFYPUjSJdrtV6AeyJOtTkw6X72o=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+        
+<form>
+    <div style="width: 70%; margin: auto; text-align: center;">    
+        <p class="info-label">Input</p> <br />
+        <textarea type="text" id="inputText" multiple="true" rows="15" class="input-output"></textarea>
+        <br />
+        <br />
+        <div style="display: grid; margin-top: 30px; margin-bottom: 30px;">
+            <div style="grid-column: 1;">
+                <p class="info-label" style="font-size: 20px;">Password</p>
+                <input type="password" class="input-output" style="width: 60%;" id="password">
+            </div>
+            <input type="button" class="btn" style="margin: auto; grid-column: 2;" value="Encrypt text" onclick="encrypt()">         
+            <input type="button" class="btn" style="margin: auto; grid-column: 3;" value="Decrypt text" onclick="decrypt()">
+        </div>
+        <p id="infoText"> </p>
+        <br />
+        <p class="info-label">Output</p> <br />
+        <textarea type="text" id="outputText" multiple="true" rows="15" class="input-output"></textarea>
+    </div>
+</form>
+
+<script src="./skrypt.js"></script>
+</body>
+</html>
